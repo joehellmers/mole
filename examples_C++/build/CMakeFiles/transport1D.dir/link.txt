@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU CMakeFiles/transport1D.dir/transport1D.cpp.o -o transport1D  /home/oneapi/mole/Cmakefiles/mole_C++/build/libmole_static.a /usr/lib/x86_64-linux-gnu/libopenblas.a /home/oneapi/superlu/superlu-master/build/SRC/libsuperlu.a /usr/lib/x86_64-linux-gnu/libarmadillo.so /usr/lib/x86_64-linux-gnu/libgfortran.so.5 

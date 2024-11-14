@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU CMakeFiles/test3.dir/test3.cpp.o -o test3  -Wl,-rpath,/opt/OpenBLAS/lib ../mole_C++/libmole_C++.a /usr/lib/x86_64-linux-gnu/libarmadillo.so /opt/OpenBLAS/lib/libopenblas.so /usr/local/lib/libsuperlu.a 
