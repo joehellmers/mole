@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 
 # Required Libraries
-find_package(Armadillo 12.6.6 REQUIRED)
+find_package(Armadillo 9.800.4 REQUIRED)
 find_package(Eigen3 3.3.7 REQUIRED)
 find_package(OpenBLAS 0.3.8 REQUIRED)
 
