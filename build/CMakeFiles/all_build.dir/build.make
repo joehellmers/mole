@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oneapi/topLevel
+CMAKE_SOURCE_DIR = /home/oneapi/Cmakefiles
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oneapi/topLevel/build
+CMAKE_BINARY_DIR = /home/oneapi/Cmakefiles/build
 
 # Utility rule file for all_build.
 
@@ -83,6 +83,6 @@ CMakeFiles/all_build.dir/clean:
 .PHONY : CMakeFiles/all_build.dir/clean
 
 CMakeFiles/all_build.dir/depend:
-	cd /home/oneapi/topLevel/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oneapi/topLevel /home/oneapi/topLevel /home/oneapi/topLevel/build /home/oneapi/topLevel/build /home/oneapi/topLevel/build/CMakeFiles/all_build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/oneapi/Cmakefiles/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oneapi/Cmakefiles /home/oneapi/Cmakefiles /home/oneapi/Cmakefiles/build /home/oneapi/Cmakefiles/build /home/oneapi/Cmakefiles/build/CMakeFiles/all_build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/all_build.dir/depend
 

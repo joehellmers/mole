@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/opt/OpenBLAS/include -I/home/oneapi/topLevel/mole_C++
+CXX_INCLUDES = -I/usr/include/eigen3 -I/opt/OpenBLAS/include -I/home/oneapi/Cmakefiles/mole_C++
 
 CXX_FLAGS =  -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU -std=gnu++14
 

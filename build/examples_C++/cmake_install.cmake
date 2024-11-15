@@ -1,4 +1,4 @@
-# Install script for directory: /home/oneapi/topLevel/examples_C++
+# Install script for directory: /home/oneapi/Cmakefiles/examples_C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

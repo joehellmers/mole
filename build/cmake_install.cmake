@@ -1,4 +1,4 @@
-# Install script for directory: /home/oneapi/topLevel
+# Install script for directory: /home/oneapi/Cmakefiles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oneapi/topLevel/build/mole_C++/cmake_install.cmake")
-  include("/home/oneapi/topLevel/build/tests_C++/cmake_install.cmake")
-  include("/home/oneapi/topLevel/build/examples_C++/cmake_install.cmake")
+  include("/home/oneapi/Cmakefiles/build/mole_C++/cmake_install.cmake")
+  include("/home/oneapi/Cmakefiles/build/tests_C++/cmake_install.cmake")
+  include("/home/oneapi/Cmakefiles/build/examples_C++/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oneapi/topLevel/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/oneapi/Cmakefiles/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
