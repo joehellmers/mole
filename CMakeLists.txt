@@ -24,3 +24,12 @@ endif()
 # Include and link directories for all subprojects
 include_directories(${ARMADILLO_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS} ${SUPERLU_INCLUDE_DIR})
 set(LINK_LIBS ${ARMADILLO_LIBRARIES} ${OpenBLAS_LIBRARIES} ${SUPERLU_LIBRARY})
+
+# Add subdirectories 
+add_subdirectory(mole_C++) 
+add_subdirectory(tests_C++) 
+add_subdirectory(examples_C++) 
+
+# Custom target to build everything 
+
+add_custom_target(all_build DEPENDS mole_C++ tests_C++ examples_C++)
