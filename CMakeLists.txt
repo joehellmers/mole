@@ -13,7 +13,7 @@ find_library(OpenBLAS_LIBRARIES NAMES openblas blas "/usr/lib/x86_64-linux-gnu" 
 
 # SuperLU library and headers
 find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" NO_DEFAULT_PATH)
-find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" NO_DEFAULT_PATH)
+find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" "/usr/lib/x86_64-linux-gnu" NO_DEFAULT_PATH)
 if(NOT SUPERLU_INCLUDE_DIR OR NOT SUPERLU_LIBRARY)
     message(FATAL_ERROR "SuperLU not found. Please make sure SuperLU is installed.")
 else()
