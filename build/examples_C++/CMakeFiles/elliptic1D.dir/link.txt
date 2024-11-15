@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU CMakeFiles/elliptic1D.dir/elliptic1D.cpp.o -o elliptic1D  -Wl,-rpath,/opt/OpenBLAS/lib ../mole_C++/libmole_C++.a /usr/lib/x86_64-linux-gnu/libarmadillo.so /opt/OpenBLAS/lib/libopenblas.so /usr/local/lib/libsuperlu.a 
