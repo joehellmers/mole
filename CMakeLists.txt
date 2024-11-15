@@ -12,7 +12,7 @@ find_package(Eigen3 3.3.7 REQUIRED)
 find_library(OpenBLAS_LIBRARIES NAMES openblas blas "/usr/lib/x86_64-linux-gnu" REQUIRED)
 
 # SuperLU library and headers
-find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" NO_DEFAULT_PATH)
+find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" "/usr/include/superlu" NO_DEFAULT_PATH)
 find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" "/usr/lib/x86_64-linux-gnu" NO_DEFAULT_PATH)
 if(NOT SUPERLU_INCLUDE_DIR OR NOT SUPERLU_LIBRARY)
     message(FATAL_ERROR "SuperLU not found. Please make sure SuperLU is installed.")
