@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Detect Clang and adjust compiler flags
 if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    message(STATUS "Clang compiler detected. Disabling -fopenmp.")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
+    message(STATUS "Clang compiler detected. Suppressing -fopenmp in CXXFLAGS.")
+    set(CMAKE_CXX_FLAGS "-O3 -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 else()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
+    set(CMAKE_CXX_FLAGS "-O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 endif()
 
 
