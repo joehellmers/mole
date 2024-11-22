@@ -2,8 +2,15 @@ cmake_minimum_required(VERSION 3.10)
 project(TopLevelProject VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 
+
+# Detect Clang and adjust compiler flags
+if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    message(STATUS "Clang compiler detected. Disabling -fopenmp.")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
+else()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
+endif()
 
 
 # Required Libraries
