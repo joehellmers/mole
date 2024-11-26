@@ -10,7 +10,8 @@ message(STATUS "Detected CXX Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 if(CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
     message(STATUS "Apple Clang detected. Configuring OpenMP support.")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xclang -fopenmp")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lomp")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/lib -lomp")
+    include_directories("/usr/local/Cellar/libomp/include")
 else()
     set(CMAKE_CXX_FLAGS "-O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 endif()
@@ -32,7 +33,7 @@ endif()
 
 # Include and link directories for all subprojects
 include_directories(${ARMADILLO_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS} ${SUPERLU_INCLUDE_DIR})
-set(LINK_LIBS ${ARMADILLO_LIBRARIES} ${OpenBLAS_LIBRARIES} ${SUPERLU_LIBRARY})
+set(LINK_LIBS ${ARMADILLO_LIBRARIES} ${OpenBLAS_LIBRARIES} ${SUPERLU_LIBRARY} -lomp)
 
 # Add subdirectories 
 add_subdirectory(mole_C++) 
