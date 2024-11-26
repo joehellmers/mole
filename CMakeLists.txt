@@ -16,6 +16,7 @@ include_directories("/usr/local/Cellar/libomp/19.1.4/include")
 find_package(Armadillo 9.800.4 REQUIRED)
 find_package(Eigen3 3.3.7 REQUIRED)
 find_library(OpenBLAS_LIBRARIES NAMES openblas blas "/usr/lib/x86_64-linux-gnu" REQUIRED)
+find_package(lapack REQUIRED)
 
 # SuperLU library and headers
 find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" "/usr/include/superlu" NO_DEFAULT_PATH)
@@ -28,8 +29,8 @@ endif()
 
 
 # Include and link directories for all subprojects
-include_directories(${ARMADILLO_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS} ${SUPERLU_INCLUDE_DIR})
-set(LINK_LIBS ${ARMADILLO_LIBRARIES} ${OpenBLAS_LIBRARIES} ${SUPERLU_LIBRARY} -lomp)
+include_directories(${ARMADILLO_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIRS} ${SUPERLU_INCLUDE_DIR} ${LAPACK_INCLUDE_DIR})
+set(LINK_LIBS ${ARMADILLO_LIBRARIES} ${OpenBLAS_LIBRARIES} ${SUPERLU_LIBRARY} ${LAPACK_LIBRARY} -lomp)
 
 # Add subdirectories 
 add_subdirectory(mole_C++) 
