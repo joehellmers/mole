@@ -9,6 +9,8 @@ message(STATUS "Detected CXX Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 #set CXX_FLAGS
 set(CMAKE_CXX_FLAGS "-O3 -Xclang -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/19.1.4/lib -lomp")
+
+#include Directories
 include_directories("/usr/local/Cellar/libomp/19.1.4/include")
 
 
@@ -16,8 +18,8 @@ include_directories("/usr/local/Cellar/libomp/19.1.4/include")
 find_package(Armadillo 9.800.4 REQUIRED)
 find_package(Eigen3 3.3.7 REQUIRED)
 find_library(OpenBLAS_LIBRARIES NAMES openblas blas "/usr/lib/x86_64-linux-gnu" REQUIRED)
-find_package(LAPACK REQUIRED)
-
+# Find LAPACK library
+find_library(LAPACK_LIBRARY lapack REQUIRED PATHS "/usr/lib" "/usr/lib/x86_64-linux-gnu" "/usr/local/lib" "/usr/local/Cellar/" "/usr/local/Cellar/lapack/3.12.0")
 # SuperLU library and headers
 find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" "/usr/include/superlu" NO_DEFAULT_PATH)
 find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" "/usr/lib/x86_64-linux-gnu" NO_DEFAULT_PATH)
