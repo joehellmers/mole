@@ -8,8 +8,8 @@ message(STATUS "Detected CXX Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 
 #set CXX_FLAGS
 set(CMAKE_CXX_FLAGS "-O3 -Xclang -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/lib -lomp")
-include_directories("/usr/local/Cellar/libomp/include")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/19.1.4/lib -lomp")
+include_directories("/usr/local/Cellar/libomp/19.1.4/include")
 
 
 # Required Libraries
