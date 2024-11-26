@@ -2,19 +2,15 @@ cmake_minimum_required(VERSION 3.10)
 project(TopLevelProject VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 # Display the detected C++ compiler ID
 message(STATUS "Detected CXX Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 
+#set CXX_FLAGS
+set(CMAKE_CXX_FLAGS "-O3 -Xclang -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/lib -lomp")
+include_directories("/usr/local/Cellar/libomp/include")
 
-# Detect Clang and adjust compiler flags
-if(CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
-    message(STATUS "Apple Clang detected. Configuring OpenMP support.")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Xclang -fopenmp")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/lib -lomp")
-    include_directories("/usr/local/Cellar/libomp/include")
-else()
-    set(CMAKE_CXX_FLAGS "-O3 -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
-endif()
 
 # Required Libraries
 find_package(Armadillo 9.800.4 REQUIRED)
