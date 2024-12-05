@@ -39,7 +39,7 @@ Install using the in-built library:
  	wget https://github.com/xiaoyeli/superlu.git  
 	cd superlu  
 	mkdir build && cd build  
-	cmake  
+	cmake ..
 	make  
 	sudo make install  # To install the library  
 	make test  # Optional: Run regression tests
@@ -117,7 +117,8 @@ OR manually install:
 	wget https://github.com/csrc-sdsu/mole.git  
 	cd mole/src/cpp  
 	mkdir build && cd build  
-	cmake ..  
+	cmake ..
+ 	cmake --build .
 	make  
 	sudo make install  # To install the library
 
