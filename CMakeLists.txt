@@ -10,10 +10,13 @@ message(STATUS "Detected CXX Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 set(CMAKE_CXX_FLAGS "-O3 -Xclang -fopenmp -DARMA_DONT_USE_WRAPPER -DARMA_USE_SUPERLU")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L/usr/local/Cellar/libomp/19.1.4/lib -lomp")
 
+# Set path for seaching for Spack packages
+# set(CMAKE_PREFIX_PATH $ENV{SPACK_ROOT}/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/)
+
 #include Directories
 include_directories("/usr/local/Cellar/libomp/19.1.4/include")
 
-
+    
 # Required Libraries
 find_package(Armadillo 9.800.4 REQUIRED)
 find_package(Eigen3 3.3.7 REQUIRED)
@@ -21,12 +24,19 @@ find_library(OpenBLAS_LIBRARIES NAMES openblas blas "/usr/lib/x86_64-linux-gnu" 
 # Find LAPACK library
 find_library(LAPACK_LIBRARY lapack REQUIRED PATHS "/usr/lib" "/usr/lib/x86_64-linux-gnu" "/usr/local/lib" "/usr/local/Cellar/" "/usr/local/Cellar/lapack/3.12.0")
 # SuperLU library and headers
-find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" "/usr/include/superlu" NO_DEFAULT_PATH)
-find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" "/usr/lib/x86_64-linux-gnu" NO_DEFAULT_PATH)
-if(NOT SUPERLU_INCLUDE_DIR OR NOT SUPERLU_LIBRARY)
-    message(FATAL_ERROR "SuperLU not found. Please make sure SuperLU is installed.")
+
+find_path(SUPERLU_INCLUDE_DIR slu_ddefs.h PATHS  "/usr/local/include" "/usr/include" "/usr/include/superlu" "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/superlu-5.3.0-k7zsw2ojjbw6s33aawsldugmwqxlnkje/include/" NO_DEFAULT_PATH)
+if(NOT SUPERLU_INCLUDE_DIR )
+    message(FATAL_ERROR "SuperLU include not found. Please make sure SuperLU is installed.")
 else()
-    message(STATUS "SuperLU found at ${SUPERLU_INCLUDE_DIR} and ${SUPERLU_LIBRARY}")
+    message(STATUS "SuperLU include found at ${SUPERLU_INCLUDE_DIR}")
+endif()
+
+find_library(SUPERLU_LIBRARY superlu PATHS "/usr/local/lib" "/usr/lib" "/usr/lib/x86_64-linux-gnu" "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/superlu-5.3.0-k7zsw2ojjbw6s33aawsldugmwqxlnkje/lib/" NO_DEFAULT_PATH)
+if(NOT SUPERLU_LIBRARY)
+    message(FATAL_ERROR "SuperLU library not found. Please make sure SuperLU is installed.")
+else()
+    message(STATUS "SuperLU found at ${SUPERLU_LIBRARY}")
 endif()
 
 

@@ -1,0 +1,1154 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-51-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jlhellmers/appsdev/mole/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h"
+      binary: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08fbc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_08fbc.dir/build.make CMakeFiles/cmTC_08fbc.dir/build
+        gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h'
+        Building CXX object CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++   -v -o CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs
+        COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/'
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_08fbc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccvjmH7F.s
+        GNU C++17 (Spack GCC) version 14.1.0 (aarch64-unknown-linux-gnu)
+        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../aarch64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include
+         /usr/local/include
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 95bcc044b3f1a30d28d51b4b6c46e61c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvjmH7F.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_08fbc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08fbc.dir/link.txt --verbose=1
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++  -v CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_08fbc 
+        Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs
+        COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++
+        COLLECT_LTO_WRAPPER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (Spack GCC) 
+        COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08fbc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08fbc.'
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2 -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWlF3LB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_08fbc /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08fbc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08fbc.'
+        gmake[1]: Leaving directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+          add: [/usr/local/include]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/aarch64-unknown-linux-gnu]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/backward]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/aarch64-unknown-linux-gnu;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/backward;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include;/usr/local/include;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_08fbc/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_08fbc.dir/build.make CMakeFiles/cmTC_08fbc.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-qmSq7h']
+        ignore line: [Building CXX object CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++   -v -o CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs]
+        ignore line: [COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/']
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_08fbc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccvjmH7F.s]
+        ignore line: [GNU C++17 (Spack GCC) version 14.1.0 (aarch64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../aarch64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 95bcc044b3f1a30d28d51b4b6c46e61c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvjmH7F.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_08fbc]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08fbc.dir/link.txt --verbose=1]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++  -v CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_08fbc ]
+        ignore line: [Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs]
+        ignore line: [COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_08fbc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_08fbc.']
+        link line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2 -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWlF3LB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_08fbc /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccWlF3LB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_08fbc] ==> ignore
+          arg [/lib/aarch64-linux-gnu/crt1.o] ==> obj [/lib/aarch64-linux-gnu/crt1.o]
+          arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o] ==> obj [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64] ==> ignore
+          arg [CMakeFiles/cmTC_08fbc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o] ==> obj [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o]
+          arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/aarch64-linux-gnu/crt1.o;/lib/aarch64-linux-gnu/crti.o;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o;/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64;/lib/aarch64-linux-gnu;/lib64;/usr/lib/aarch64-linux-gnu;/usr/lib64;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib]
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-51-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jlhellmers/appsdev/mole/CMakeFiles/3.30.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5"
+      binary: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5'
+        
+        Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_40b16/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_40b16.dir/build.make CMakeFiles/cmTC_40b16.dir/build
+        gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5'
+        Building CXX object CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++   -v -o CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs
+        COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/'
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_40b16.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccGCAdUD.s
+        GNU C++17 (Spack GCC) version 14.1.0 (aarch64-unknown-linux-gnu)
+        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed/aarch64-linux-gnu"
+        ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../aarch64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include
+         /usr/local/include
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 95bcc044b3f1a30d28d51b4b6c46e61c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGCAdUD.s
+        GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_40b16
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b16.dir/link.txt --verbose=1
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++  -v -Wl,-v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_40b16
+        Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs
+        COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++
+        COLLECT_LTO_WRAPPER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper
+        Target: aarch64-unknown-linux-gnu
+        Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl,-rpath,/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (Spack GCC) 
+        COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/
+        LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40b16' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_40b16.'
+         /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2 -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2YRXiz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_40b16 /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o
+        collect2 version 14.1.0
+        /usr/bin/ld -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2YRXiz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_40b16 /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40b16' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_40b16.'
+        gmake[1]: Leaving directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+          add: [/usr/local/include]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+          add: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/aarch64-unknown-linux-gnu]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/backward]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+        collapse include dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/aarch64-unknown-linux-gnu;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include/c++/14.1.0/backward;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include;/usr/local/include;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_40b16/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_40b16.dir/build.make CMakeFiles/cmTC_40b16.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-I68Mp5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++   -v -o CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs]
+        ignore line: [COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/']
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_40b16.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -o /tmp/ccGCAdUD.s]
+        ignore line: [GNU C++17 (Spack GCC) version 14.1.0 (aarch64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../aarch64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/aarch64-unknown-linux-gnu]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../include/c++/14.1.0/backward]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/include]
+        ignore line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/include-fixed]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 95bcc044b3f1a30d28d51b4b6c46e61c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccGCAdUD.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_40b16]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b16.dir/link.txt --verbose=1]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++  -v -Wl -v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_40b16]
+        ignore line: [Reading specs from /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/specs]
+        ignore line: [COLLECT_GCC=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper]
+        ignore line: [Target: aarch64-unknown-linux-gnu]
+        ignore line: [Configured with: /tmp/jlhellmers/spack-stage/spack-stage-gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/spack-src/configure --prefix=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/include --with-zstd-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib --enable-bootstrap --with-mpfr-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/include --with-mpfr-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib --with-gmp-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/include --with-gmp-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib --with-mpc-include=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/include --with-mpc-lib=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib' --with-boot-ldflags='-Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-runtime-13.2.0-lqvwk2qb6viujby3sxcavtohazefpyfb/lib -Wl -rpath /usr/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmp-6.3.0-74toglk5g2yv2cyqhige7khhb7t4tgdl/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpc-1.3.1-vrksd7misevkjp4bpovop5qxwyy7zu4f/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/mpfr-4.2.1-2hd2mgqumg4rfpejvtpcz562eefe2bl2/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zlib-ng-2.2.1-2dzpqhiylf3bxy2wegmalqxewzz24uo4/lib -Wl -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/zstd-1.5.6-7czs5ecwydfsi2xj3u6ccwgpotxgfrvc/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_40b16' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_40b16.']
+        link line: [ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2 -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2YRXiz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_40b16 /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2YRXiz.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_40b16] ==> ignore
+          arg [/lib/aarch64-linux-gnu/crt1.o] ==> obj [/lib/aarch64-linux-gnu/crt1.o]
+          arg [/lib/aarch64-linux-gnu/crti.o] ==> obj [/lib/aarch64-linux-gnu/crti.o]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o] ==> obj [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o] ==> obj [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o]
+          arg [/lib/aarch64-linux-gnu/crtn.o] ==> obj [/lib/aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.1.0]
+        ignore line: [/usr/bin/ld -plugin /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/liblto_plugin.so -plugin-opt=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/libexec/gcc/aarch64-unknown-linux-gnu/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2YRXiz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_40b16 /lib/aarch64-linux-gnu/crt1.o /lib/aarch64-linux-gnu/crti.o /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64 -L/lib/aarch64-linux-gnu -L/lib/../lib64 -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib64 -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../.. -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64 -v CMakeFiles/cmTC_40b16.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o /lib/aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../../../lib64] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/../../..] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/aarch64-linux-gnu/crt1.o;/lib/aarch64-linux-gnu/crti.o;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtbegin.o;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0/crtend.o;/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib/gcc/aarch64-unknown-linux-gnu/14.1.0;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib64;/lib/aarch64-linux-gnu;/lib64;/usr/lib/aarch64-linux-gnu;/usr/lib64;/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gcc-14.1.0-6725mkvdnkawp52p4ex4tgy7aulomffe/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-51-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is NVHPC, found in:
+        /home/jlhellmers/appsdev/mole/CMakeFiles/3.30.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ"
+      binary: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ'
+        
+        Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_9889d/fast
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_9889d.dir/build.make CMakeFiles/cmTC_9889d.dir/build
+        gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ'
+        Building CXX object CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        Create file CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++K76bSSenfHFy.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++K76bSSenfHFy.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++K76bSJ8g7nKL.ll
+        NVC++/arm Linux 24.5-1: compilation successful
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++K76bSJ8g7nKL.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o
+        Unlinking /tmp/nvc++K76bSSenfHFy.il
+        Unlinking /tmp/nvc++e76bmsQ3tqVJ.s
+        Unlinking /tmp/nvc++K76bSJ8g7nKL.ll
+        Unlinking /tmp/nvc++e76bmbHGTFYE.llvm
+        Linking CXX executable cmTC_9889d
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9889d.dir/link.txt --verbose=1
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9889d
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        
+        /usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_9889d -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_9889d/fast]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_9889d.dir/build.make CMakeFiles/cmTC_9889d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-zSFLyZ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: [Create file CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++K76bSSenfHFy.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++K76bSSenfHFy.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++K76bSJ8g7nKL.ll]
+        ignore line: [NVC++/arm Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++K76bSJ8g7nKL.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [Unlinking /tmp/nvc++K76bSSenfHFy.il]
+        ignore line: [Unlinking /tmp/nvc++e76bmsQ3tqVJ.s]
+        ignore line: [Unlinking /tmp/nvc++K76bSJ8g7nKL.ll]
+        ignore line: [Unlinking /tmp/nvc++e76bmbHGTFYE.llvm]
+        ignore line: [Linking CXX executable cmTC_9889d]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9889d.dir/link.txt --verbose=1]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9889d]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: []
+        link line: [/usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_9889d -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [/usr/lib/aarch64-linux-gnu/crt1.o] ==> obj [/usr/lib/aarch64-linux-gnu/crt1.o]
+          arg [/usr/lib/aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o]
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-T] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld] ==> ignore
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/]
+          arg [CMakeFiles/cmTC_9889d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9889d] ==> ignore
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64]
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lnvomp] ==> lib [nvomp]
+          arg [-ldl] ==> lib [dl]
+          arg [--as-needed] ==> ignore
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [--no-as-needed] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lnvcpumath] ==> lib [nvcpumath]
+          arg [-lnvc] ==> lib [nvc]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o]
+          arg [/usr/lib/aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> [/usr/lib64]
+        implicit libs: [atomic;nvhpcatm;stdc++;nvomp;dl;atomic;nvhpcatm;dl;pthread;nvcpumath;nvc;gcc;gcc_s;c;gcc;gcc_s;m]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/crt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib;/usr/lib/aarch64-linux-gnu;/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-51-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is NVHPC, found in:
+        /home/jlhellmers/appsdev/mole/CMakeFiles/3.30.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn"
+      binary: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn'
+        
+        Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_6e25a/fast
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_6e25a.dir/build.make CMakeFiles/cmTC_6e25a.dir/build
+        gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn'
+        Building CXX object CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        Create file CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++AQkco-VukHiY.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++AQkco-VukHiY.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++6QkcUaVkuEkO.ll
+        NVC++/arm Linux 24.5-1: compilation successful
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++6QkcUaVkuEkO.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o
+        Unlinking /tmp/nvc++AQkco-VukHiY.il
+        Unlinking /tmp/nvc++QQkc_4VVS2iD.s
+        Unlinking /tmp/nvc++6QkcUaVkuEkO.ll
+        Unlinking /tmp/nvc++kQkcEgNLiAYB.llvm
+        Linking CXX executable cmTC_6e25a
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e25a.dir/link.txt --verbose=1
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6e25a
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        
+        /usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_6e25a -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_6e25a/fast]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_6e25a.dir/build.make CMakeFiles/cmTC_6e25a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-4a8KIn']
+        ignore line: [Building CXX object CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: [Create file CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++AQkco-VukHiY.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++AQkco-VukHiY.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++6QkcUaVkuEkO.ll]
+        ignore line: [NVC++/arm Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++6QkcUaVkuEkO.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [Unlinking /tmp/nvc++AQkco-VukHiY.il]
+        ignore line: [Unlinking /tmp/nvc++QQkc_4VVS2iD.s]
+        ignore line: [Unlinking /tmp/nvc++6QkcUaVkuEkO.ll]
+        ignore line: [Unlinking /tmp/nvc++kQkcEgNLiAYB.llvm]
+        ignore line: [Linking CXX executable cmTC_6e25a]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e25a.dir/link.txt --verbose=1]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6e25a]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: []
+        link line: [/usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_6e25a -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [/usr/lib/aarch64-linux-gnu/crt1.o] ==> obj [/usr/lib/aarch64-linux-gnu/crt1.o]
+          arg [/usr/lib/aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o]
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-T] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld] ==> ignore
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/]
+          arg [CMakeFiles/cmTC_6e25a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6e25a] ==> ignore
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64]
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lnvomp] ==> lib [nvomp]
+          arg [-ldl] ==> lib [dl]
+          arg [--as-needed] ==> ignore
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [--no-as-needed] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lnvcpumath] ==> lib [nvcpumath]
+          arg [-lnvc] ==> lib [nvc]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o]
+          arg [/usr/lib/aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> [/usr/lib64]
+        implicit libs: [atomic;nvhpcatm;stdc++;nvomp;dl;atomic;nvhpcatm;dl;pthread;nvcpumath;nvc;gcc;gcc_s;c;gcc;gcc_s;m]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/crt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib;/usr/lib/aarch64-linux-gnu;/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-51-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is NVHPC, found in:
+        /home/jlhellmers/appsdev/mole/CMakeFiles/3.30.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg"
+      binary: "/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g -O0"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg'
+        
+        Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_86b91/fast
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_86b91.dir/build.make CMakeFiles/cmTC_86b91.dir/build
+        gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg'
+        Building CXX object CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        Create file CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++HXxdJLxGdfGI.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++HXxdJLxGdfGI.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++XXxdtH2U5wf6.ll
+        NVC++/arm Linux 24.5-1: compilation successful
+        
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++XXxdtH2U5wf6.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o
+        Unlinking /tmp/nvc++HXxdJLxGdfGI.il
+        Unlinking /tmp/nvc++PXxd7r03PaAD.s
+        Unlinking /tmp/nvc++XXxdtH2U5wf6.ll
+        Unlinking /tmp/nvc++5XxdRRkIdHg6.llvm
+        Linking CXX executable cmTC_86b91
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86b91.dir/link.txt --verbose=1
+        /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_86b91
+        Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5
+        Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek
+        
+        /usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_86b91 -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E env VERBOSE=1 /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake -f Makefile cmTC_86b91/fast]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/gmake-4.4.1-ophweev4yphn5epb75wpqewn2kwwumj4/bin/gmake  -f CMakeFiles/cmTC_86b91.dir/build.make CMakeFiles/cmTC_86b91.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/jlhellmers/appsdev/mole/CMakeFiles/CMakeScratch/TryCompile-IAsMUg']
+        ignore line: [Building CXX object CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++   -v -MD -MT CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -c /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: [Create file CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/tools/nvcpfe -- -D__GNUC__=13 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=0 -D__STDC_HOSTED__ -I- -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 -I/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/eigen-3.4.0-unlrubkwfpd7leg67i3rgmbpo5pfy6po/include/eigen3 --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include --sys_include /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/include-stdexec --sys_include /usr/include/c++/13 --sys_include /usr/include/aarch64-linux-gnu/c++/13 --sys_include /usr/include/c++/13/backward --sys_include /usr/lib/gcc/aarch64-linux-gnu/13/include --sys_include /usr/local/include --sys_include /usr/include/aarch64-linux-gnu --sys_include /usr/include -D__arm64__ -D__aarch64__ -D__LP64__ -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D__linux__ -D__linux -Dlinux -Dunix -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__ -D__ARM_ARCH=8 -D__ARM_PCS_VFP -D__VFP_FP__ -D__ARM_FEATURE_FMA -D__ARM_NEON -D__ARM_NEON__ -D__ARM_FP=0x0C -D__LITTLE_ENDIAN__ -D__AARCH64EL__ -D__ARM_FEATURE_DIRECTED_ROUNDING -D__ARM_FEATURE_SVE_MATMUL_INT8 -D__ARM_FEATURE_SVE_MATMUL_FP32 -D__ARM_FEATURE_SVE_MATMUL_FP64 -D__arm64__ -D__aarch64__ -D__PGI -D__NVCOMPILER --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --float128 --gnu_version=130200 -D__pgnu_vsn=130200 --dependencies_target_to_stdout CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o --dependencies_to_file CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -q -o /tmp/nvc++HXxdJLxGdfGI.il /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -- /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -opt 1 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 119 0x40000000 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -tp generic -x 120 0x1000 -x 119 0x8000000 -astype 0 -x 121 1 -fn /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -il /tmp/nvc++HXxdJLxGdfGI.il -x 117 0x200 -x 123 0x80000000 -x 123 4 -x 2 0x400 -x 209 0x10 -x 122 0x10 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 122 0x1 -x 249 170 -x 8 0x40000000 -x 164 0x800000 -x 68 0x1 -x 56 0x10 -x 26 0x10 -x 26 1 -x 49 0x40000000 -x 56 0x4000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 206 0x02 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -x 60 512 -x 183 0x2000000 -gnuvsn 130200 -x 123 0x400 -cmdline '+nvc++ /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -v -MD -MT CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -c' -asm /tmp/nvc++XXxdtH2U5wf6.ll]
+        ignore line: [NVC++/arm Linux 24.5-1: compilation successful]
+        ignore line: []
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/share/llvm/bin/llc /tmp/nvc++XXxdtH2U5wf6.ll -mcpu=native -O1 -dwarf-directory=false --fp-contract=on -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [Unlinking /tmp/nvc++HXxdJLxGdfGI.il]
+        ignore line: [Unlinking /tmp/nvc++PXxd7r03PaAD.s]
+        ignore line: [Unlinking /tmp/nvc++XXxdtH2U5wf6.ll]
+        ignore line: [Unlinking /tmp/nvc++5XxdRRkIdHg6.llvm]
+        ignore line: [Linking CXX executable cmTC_86b91]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86b91.dir/link.txt --verbose=1]
+        ignore line: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/bin/nvc++  -v CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_86b91]
+        ignore line: [Export NVCOMPILER=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5]
+        ignore line: [Export PGI=/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek]
+        ignore line: []
+        link line: [/usr/bin/ld /usr/lib/aarch64-linux-gnu/crt1.o /usr/lib/aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-linux-aarch64.so.1 -T /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/13/ CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib -o cmTC_86b91 -L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64 -latomic -lnvhpcatm -lstdc++ -lnvomp -ldl --as-needed -latomic -lnvhpcatm --no-as-needed -ldl -lpthread -lnvcpumath -lnvc -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -lm /usr/lib/gcc/aarch64-linux-gnu/13//crtend.o /usr/lib/aarch64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [/usr/lib/aarch64-linux-gnu/crt1.o] ==> obj [/usr/lib/aarch64-linux-gnu/crt1.o]
+          arg [/usr/lib/aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o]
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-T] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib/nvhpc.ld] ==> ignore
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13/] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13/]
+          arg [CMakeFiles/cmTC_86b91.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_86b91] ==> ignore
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64]
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lnvomp] ==> lib [nvomp]
+          arg [-ldl] ==> lib [dl]
+          arg [--as-needed] ==> ignore
+          arg [-latomic] ==> lib [atomic]
+          arg [-lnvhpcatm] ==> lib [nvhpcatm]
+          arg [--no-as-needed] ==> ignore
+          arg [-ldl] ==> lib [dl]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lnvcpumath] ==> lib [nvcpumath]
+          arg [-lnvc] ==> lib [nvc]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lm] ==> lib [m]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o]
+          arg [/usr/lib/aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtbegin.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/13//crtend.o] ==> [/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib] ==> [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13/] ==> [/usr/lib/gcc/aarch64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/13//../../../../lib64] ==> [/usr/lib64]
+        implicit libs: [atomic;nvhpcatm;stdc++;nvomp;dl;atomic;nvhpcatm;dl;pthread;nvcpumath;nvc;gcc;gcc_s;c;gcc;gcc_s;m]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/crt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtbegin.o;/usr/lib/gcc/aarch64-linux-gnu/13/crtend.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/nvhpc-24.5-j6uglqyynsx6ikcqkwpvgms62tg2woek/Linux_aarch64/24.5/compilers/lib;/usr/lib/aarch64-linux-gnu;/usr/lib/gcc/aarch64-linux-gnu/13;/usr/lib64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/jlhellmers/spack/opt/spack/linux-ubuntu24.04-m1/gcc-13.2.0/cmake-3.30.1-5kzvkqzikmsdjxol3x77ebbxgvhdhofc/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+...
